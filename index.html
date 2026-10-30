@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Silent Tools ettevõtetele</title>
-<meta name="description" content="Väikesed veebitööriistad, mis teevad korduva töö kiiremaks ja vigadeta. Kohe kasutusel, ilma paigalduse ja koolituseta.">
+<meta name="description" content="Väikesed veebitööriistad, mis teevad korduva töö kiiremaks ja vähendavad hooletusvigu. Kohe kasutusel, ilma paigalduse ja koolituseta.">
 <link rel="stylesheet" href="fonts.css">
 <style>
 /* Paigutus: üks kitsas veerg nagu tarbijalehel, tooted joontega eraldatud plokkidena. */
@@ -46,6 +46,10 @@ section:first-of-type{margin-top:40px}
 .btn.p{background:var(--accent);color:var(--accent-ink)}
 .btn:hover{background:var(--accent-soft)} .btn.p:hover{opacity:.9;background:var(--accent)}
 .sub{font-size:14.5px;color:var(--muted)}
+.client{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:8px;padding:16px 18px;border:2px solid var(--accent);border-radius:10px;background:var(--surface)}
+.client div{display:flex;flex-direction:column;min-width:0}
+.client b{font-size:17px}
+.client span{font-size:14.5px;color:var(--muted)}
 .contact{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:14px}
 .crow{display:grid;grid-template-columns:90px 1fr auto;align-items:center;gap:12px}
 .crow .lbl{color:var(--muted);font-size:14.5px}
@@ -67,7 +71,7 @@ footer{border-top:1px solid var(--line);padding-top:24px;font-size:14px;color:va
 <main class="wrap">
   <span class="kind">Silent Tools ettevõtetele</span>
   <h1 style="margin-top:8px">Tööriistad, mis säästavad tööaega</h1>
-  <p class="lede">Väikesed veebitööriistad, mis teevad korduva töö kiiremaks ja vigadeta. Töötavad igas telefonis ja arvutis. Kohe kasutusel, ilma paigalduse ja koolituseta, ning seadistatud teie protsessi järgi.</p>
+  <p class="lede">Väikesed veebitööriistad, mis teevad korduva töö kiiremaks ja vähendavad hooletusvigu. Töötavad igas telefonis ja arvutis. Kohe kasutusel, ilma paigalduse ja koolituseta, ning seadistatud teie protsessi järgi.</p>
   <ul class="facts">
     <li><b>Kohe kasutusel</b>Ei paigaldust, kasutajakontosid ega juurutusprojekti.</li>
     <li><b>Teie järgi seadistatud</b>Teie mõõdikud, vormid ja Exceli kuju.</li>
@@ -88,7 +92,11 @@ footer{border-top:1px solid var(--line);padding-top:24px;font-size:14px;color:va
       <a class="btn p" href="../naiduring/demo.html">Proovi demot</a>
       <a class="btn" href="#kontakt">Küsi pakkumist</a>
     </div>
-    <p class="sub"><a href="../naiduring/juhend.html">Kasutusjuhend</a> · Juba kasutate? <a href="../naiduring/">Ava Näiduring</a></p>
+    <div class="client">
+      <div><b>Juba klient?</b><span>Ava tööriist ja sisesta ettevõtte ligipääsukood.</span></div>
+      <a class="btn p" href="../naiduring/">Ava Näiduring</a>
+    </div>
+    <p class="sub"><a href="../naiduring/juhend.html">Kasutusjuhend</a></p>
   </section>
 
   <section>
