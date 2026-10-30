@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Silent Tools ettevõtetele</title>
+<meta name="description" content="Lihtsad veebitööriistad tööstuse ja kinnisvara igapäevatööks. Telefonis, ilma paigalduse ja kuutasuta. Väljund on Excel.">
+<link rel="stylesheet" href="fonts.css">
+<style>
+/* Paigutus: üks kitsas veerg nagu tarbijalehel, tooted joontega eraldatud plokkidena. */
+:root{
+  --bg:#F3F4F1; --surface:#FFFFFF; --ink:#18212C; --muted:#56606C; --line:#D3D8D1;
+  --accent:#1F3A5C; --accent-ink:#FFFFFF; --accent-soft:#DCE6F1; --mark:#C98A00;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",Roboto,Arial,sans-serif;
+  --f-num:"Atkinson Hyperlegible Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){ :root{
+  --bg:#11161C; --surface:#1A2129; --ink:#E9EDF0; --muted:#9DA7B1; --line:#2E3742;
+  --accent:#8DB8E8; --accent-ink:#0E1A27; --accent-soft:#22344A; --mark:#E8B13A;
+  color-scheme:dark; } }
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55}
+.wrap{max-width:640px;margin:0 auto;padding:64px max(20px,env(safe-area-inset-right,0px)) 48px max(20px,env(safe-area-inset-left,0px))}
+h1,h2{margin:0;line-height:1.12;text-wrap:balance}
+h1{font-size:44px;letter-spacing:-.015em}
+h1 span{color:var(--muted);font-weight:400}
+h2{font-size:28px}
+p{margin:0}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--mark);outline-offset:3px;border-radius:4px}
+.lede{margin-top:12px;color:var(--muted);font-size:18px;max-width:58ch}
+.facts{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.facts li{border-top:3px solid var(--accent);padding-top:8px;font-size:14.5px;color:var(--muted)}
+.facts b{display:block;color:var(--ink);font-size:15.5px}
+section{border-top:1px solid var(--line);padding:36px 0;display:flex;flex-direction:column;gap:12px}
+section:first-of-type{margin-top:40px}
+.kind{font-family:var(--f-num);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mark);font-weight:700}
+.desc{color:var(--muted)}
+.feat{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;font-size:15.5px}
+.feat li{display:grid;grid-template-columns:18px 1fr;gap:8px}
+.feat li::before{content:"";width:8px;height:8px;margin-top:9px;border-radius:2px;background:var(--accent)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:8px;border:2px solid var(--accent);font-weight:700;text-decoration:none;color:var(--accent);background:transparent}
+.btn.p{background:var(--accent);color:var(--accent-ink)}
+.btn:hover{background:var(--accent-soft)} .btn.p:hover{opacity:.9;background:var(--accent)}
+.sub{font-size:14.5px;color:var(--muted)}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.crow{display:grid;grid-template-columns:90px 1fr auto;align-items:center;gap:12px}
+.crow .lbl{color:var(--muted);font-size:14.5px}
+.crow .val{font-family:var(--f-num);font-weight:700;font-size:18px;overflow-wrap:anywhere;user-select:all}
+.crow .val a{color:var(--ink);text-decoration:none}
+.copy{min-height:40px;padding:0 14px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.copy:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
+footer{border-top:1px solid var(--line);padding-top:24px;font-size:14px;color:var(--muted)}
+@media (max-width:560px){
+  .wrap{padding-top:40px}
+  h1{font-size:34px}
+  .facts{grid-template-columns:1fr}
+  .crow{grid-template-columns:1fr auto}
+  .crow .lbl{grid-column:1/-1;margin-bottom:-8px}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Silent Tools <span>ettevõtetele</span></h1>
+  <p class="lede">Lihtsad veebitööriistad tööstuse ja kinnisvara igapäevatööks: seal, kus täna kirjutatakse paberile ja hiljem tabelisse ümber. Töötavad telefoni brauseris ja väljund on Excel.</p>
+  <ul class="facts">
+    <li><b>Kohe kasutusel</b>Ei paigaldust, kasutajakontosid ega juurutusprojekti.</li>
+    <li><b>Teie järgi seadistatud</b>Teie mõõdikud, vormid ja Exceli kuju.</li>
+    <li><b>Andmed teie käes</b>Kõik jääb teie seadmetesse, kuni ise ekspordite.</li>
+  </ul>
+
+  <section>
+    <span class="kind">Mõõdikud · hooldus</span>
+    <h2>Näiduring</h2>
+    <p class="desc">Elektri-, vee-, soojus- ja gaasimõõdikute näidud telefoniga. Lugeja skannib mõõdiku QR-kleebise, sisestab näidu ja tööriist kontrollib selle kohe eelmise näidu vastu. Kuu lõpus saab kõigi lugejate näidud ühe Exceli failina.</p>
+    <ul class="feat">
+      <li>Kontrollnimekiri sageduse järgi: igakuine, kvartaalne, iganädalane</li>
+      <li>Hoiatus, kui näit on väiksem või tarbimine ebatavaline</li>
+      <li>Foto tõendiks, suur kiri, töötab ka levita keldris</li>
+      <li>Ühtne Exceli väljund raamatupidamisse või Power Querysse</li>
+    </ul>
+    <div class="btns">
+      <a class="btn p" href="#kontakt">Küsi pakkumist</a>
+      <a class="btn" href="../naiduring/juhend.html">Vaata kasutusjuhendit</a>
+    </div>
+    <p class="sub">Juba kasutate? <a href="../naiduring/">Ava Näiduring</a></p>
+  </section>
+
+  <section>
+    <span class="kind">Tellimustöö</span>
+    <h2>Teie protsessi jaoks tehtud tööriist</h2>
+    <p class="desc">Kas teil on tabel või paberivorm, mida keegi iga nädal käsitsi täidab? Ülevaatused, ringkäigud, tellimuste kokkuvõtted, inventuur. Teen sellest telefonis töötava tööriista, mis annab väljundi täpselt sellisel kujul, nagu teie süsteem seda vajab.</p>
+    <div class="btns"><a class="btn p" href="#kontakt">Räägime teie vajadusest</a></div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Küsi pakkumist</h2>
+    <p class="desc">Kirjuta või helista. Näitan tööriista teie objektil ette ja seadistame selle koos teie mõõdikute või vormidega.</p>
+    <div class="contact">
+      <div class="crow"><span class="lbl">E-post</span><span class="val"><a href="mailto:tmskalda@gmail.com">tmskalda@gmail.com</a></span><button class="copy" type="button" data-copy="tmskalda@gmail.com">Kopeeri</button></div>
+      <div class="crow"><span class="lbl">Telefon</span><span class="val"><a href="tel:+3725217749">+372 521 7749</a></span><button class="copy" type="button" data-copy="+3725217749">Kopeeri</button></div>
+    </div>
+  </section>
+
+  <footer>© 2026 Silent Tools · <a href="../terms.html">Tingimused ja privaatsus</a> (inglise keeles) · <a href="../">Tööriistad eraisikutele</a></footer>
+</main>
+<script>
+document.addEventListener("click", async e => {
+  const b = e.target.closest("[data-copy]"); if (!b) return;
+  try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = "Kopeeritud"; }
+  catch (_) { const r = document.createRange(); r.selectNodeContents(b.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Valitud"; }
+  setTimeout(() => { b.textContent = "Kopeeri"; }, 2000);
+});
+</script>
+</body>
+</html>
